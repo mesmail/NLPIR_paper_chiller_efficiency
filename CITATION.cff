@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite the paper below."
+title: "Online Modelling for Real-Time Chiller Efficiency Optimization: co-simulation testbed, load forecasting, online efficiency tracking and staging-decision analysis"
+abstract: >-
+  Code for a verified chiller-plant co-simulation testbed (3R2C building,
+  three-chiller water-cooled plant with DOE-2 Electric EIR curves, time-of-use
+  tariff), short-horizon cooling-load forecasting with walk-forward evaluation,
+  recursive-least-squares online identification of chiller efficiency under
+  injected drift, and a quasi-static analysis of how forecast and model errors
+  propagate into the chiller staging decision. All results are from simulation;
+  no measured plant data was used.
+type: software
+authors:
+  - given-names: Mohammad
+    family-names: Esmail
+    email: moh.esmail@gmail.com
+    affiliation: "Universiti Tunku Abdul Rahman (UTAR)"
+  - given-names: Tong Yuen
+    family-names: Chai
+    email: chaity@utar.edu.my
+    affiliation: "Universiti Tunku Abdul Rahman (UTAR)"
+license: MIT
+repository-code: "https://github.com/mesmail/NLPIR_paper_chiller_efficiency"
+keywords:
+  - chiller plant
+  - online identification
+  - recursive least squares
+  - load forecasting
+  - model predictive control
+  - co-simulation
+preferred-citation:
+  type: conference-paper
+  title: "Online Modelling for Real-Time Chiller Efficiency Optimization: A Verified Co-Simulation Testbed with Load Forecasting, Online Efficiency Tracking and Staging-Decision Analysis"
+  authors:
+    - given-names: Mohammad
+      family-names: Esmail
+      affiliation: "Universiti Tunku Abdul Rahman (UTAR)"
+    - given-names: Tong Yuen
+      family-names: Chai
+      affiliation: "Universiti Tunku Abdul Rahman (UTAR)"
+  year: 2026
+  # TODO once the paper is accepted: fill in collection-title (proceedings),
+  # publisher, volume, pages and doi, and remove this note.
+  notes: "Manuscript under review; publication details to be completed on acceptance."
