@@ -146,7 +146,8 @@ def main():
     a.bar(range(len(vals)), vals, color=cl); a.set_xticks(range(len(vals))); a.set_xticklabels(labs, rotation=60, fontsize=7)
     for i_, v_ in enumerate(vals):
         if v_ < 0.02: a.text(i_, 0.04, '<0.02', rotation=90, fontsize=6, ha='center', va='bottom')
-    a.legend(handles=[Patch(color=C_BASE, label='wrong scale k'), Patch(color=C_PRE, label='wrong part-load shape a')], fontsize=7, loc='upper right')
+    a.set_ylim(0, max(vals) * 1.35)          # headroom so the legend never sits on the tallest bar
+    a.legend(handles=[Patch(color=C_BASE, label='wrong scale k'), Patch(color=C_PRE, label='wrong part-load shape a')], fontsize=7, loc='upper left')
     a.set_ylabel('extra plant energy (%)'); a.set_title('(b) Model error in scale vs shape')
     a = ax[1, 0]
     items = [('static', res['decision_part_load']['static']), ('scalar RLS', res['decision_part_load']['online_scalar']),
